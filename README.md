@@ -67,4 +67,6 @@ Follow these steps to test the demo and see your shortcuts in action:
    - Tapping it triggers the `AppIntent` (via deep link or simulated action)
 
 ## 🖼 Demo Preview
-![Shortcuts Demo](https://github.com/user-attachments/assets/b7c54669-1aae-4622-b9c5-34697753199f)
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/b7c54669-1aae-4622-b9c5-34697753199f" alt="Shortcuts Demo" width="300"/>
+</p>
