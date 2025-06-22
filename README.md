@@ -7,22 +7,22 @@ This project demonstrates clean architecture with dependency injection and persi
 
 ## 🚀 What This Demo Covers
 
-- ✅ iOS 16+ App Intents usage
-- ✅ Spotlight integration with `AppEntity` and custom images
-- ✅ Dynamic shortcut generation using mock models
-- ✅ Persistence with `UserDefaults`
-- ✅ Thematic shortcut icons (Red, Green, Blue balloons)
-- ✅ Modular code with protocol-based dependency injection
+- ✅ iOS 16+ App Intents usage  
+- ✅ Spotlight integration with `AppEntity` and custom images  
+- ✅ Dynamic shortcut generation using mock models  
+- ✅ Persistence with `UserDefaults`  
+- ✅ Thematic shortcut icons (Red, Green, Blue balloons)  
+- ✅ Modular code with protocol-based dependency injection  
 
 ---
 
 ## 🧠 How It Works
 
-1. `DKAppIntentModel` defines shortcut data (`UUID`, name, image name)
-2. `DKAppEntity` conforms to `AppEntity`, enabling Spotlight visibility
-3. `DKAppIntent` is triggered when the user selects a shortcut
-4. `DKShortcutsHandler` initializes and stores balloon shortcut models
-5. `DKAppEntityManager` persists data using `UserDefaults`
+1. `DKAppIntentModel` defines shortcut data (`UUID`, name, image name)  
+2. `DKAppEntity` conforms to `AppEntity`, enabling Spotlight visibility  
+3. `DKAppIntent` is triggered when the user selects a shortcut  
+4. `DKShortcutsHandler` initializes and stores balloon shortcut models  
+5. `DKAppEntityManager` persists data using `UserDefaults`  
 6. `DisplayRepresentation` is used to show custom icons in Spotlight
 
 ---
@@ -46,7 +46,7 @@ A protocol `DKAppEntityManagerProtocol` is used to enable testable and decoupled
 It is injected like this:
 
 ```
-let handler = HSShortcutsHandler(entityManager: DKAppEntityManager.shared)
+let handler = DKShortcutsHandler(entityManager: DKAppEntityManager.shared)
 handler.initializeShortcuts()
 ```
 ---
@@ -65,3 +65,6 @@ Follow these steps to test the demo and see your shortcuts in action:
 3. **Tap to Execute**
    - The shortcut appears with its custom icon and name
    - Tapping it triggers the `AppIntent` (via deep link or simulated action)
+
+## 🖼 Demo Preview
+![Shortcuts Demo](https://github.com/user-attachments/assets/b7c54669-1aae-4622-b9c5-34697753199f)
