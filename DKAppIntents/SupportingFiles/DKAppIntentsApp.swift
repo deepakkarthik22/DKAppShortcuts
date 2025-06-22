@@ -6,7 +6,7 @@ import Intents
 @main
 struct DKAppIntentsApp: App {
     init() {
-        let handler = HSShortcutsHandler(entityManager: DKAppEntityManager.shared)
+        let handler = DKShortcutsHandler(entityManager: DKAppEntityManager.shared)
         handler.initializeShortcuts()
     }
 

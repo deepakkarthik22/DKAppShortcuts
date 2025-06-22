@@ -1,6 +1,6 @@
 import Foundation
 
-final class HSShortcutsHandler {
+final class DKShortcutsHandler {
     private let entityManager: DKAppEntityManagerProtocol
 
     init(entityManager: DKAppEntityManagerProtocol) {
